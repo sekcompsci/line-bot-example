@@ -36,7 +36,7 @@ app.post('/callback', line.middleware(config), (req, res) => {
 const handleEvent = (event) => {
     if (event.type === 'postback' && event.postback.data) return client.replyMessage(event.replyToken, { type: 'text', text: event.postback.data });
 
-    if (event.type !== 'message' || event.type !== 'flex') return Promise.resolve(null);
+    if (event.type !== 'message' || event.message.type !== 'text') return Promise.resolve(null);
 
     let message = undefined
 
