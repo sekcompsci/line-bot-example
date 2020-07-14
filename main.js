@@ -194,7 +194,7 @@ const handleEvent = (event) => {
                         {
                             "type": "uri",
                             "label": "Liff",
-                            "uri": "https://digitalrm-line-liff.herokuapp.com/"
+                            "uri": "https://liff.line.me/1654446763-WNw4E4Mx"
                         }
                     ],
                     "title": "Menu 1",
