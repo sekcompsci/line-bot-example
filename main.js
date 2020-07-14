@@ -193,7 +193,12 @@ const handleEvent = (event) => {
                         },
                         {
                             "type": "uri",
-                            "label": "Liff",
+                            "label": "Internal Liff",
+                            "uri": "line://app/1654446763-WNw4E4Mx"
+                        },
+                        {
+                            "type": "message",
+                            "label": "Universal Liff",
                             "uri": "https://liff.line.me/1654446763-WNw4E4Mx"
                         }
                     ],
