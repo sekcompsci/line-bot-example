@@ -190,6 +190,11 @@ const handleEvent = (event) => {
                             "type": "message",
                             "label": "Carousel",
                             "text": "carousel"
+                        },
+                        {
+                            "type": "uri",
+                            "label": "Liff",
+                            "uri": "https://digitalrm-line-liff.herokuapp.com/"
                         }
                     ],
                     "title": "Menu 1",
