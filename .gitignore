@@ -1,0 +1,7 @@
+node_modules/
+dist/
+
+configs/.env
+configs/.dev.env
+configs/.staging.env
+configs/.prod.env
