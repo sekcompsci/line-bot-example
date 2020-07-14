@@ -34,6 +34,8 @@ app.post('/callback', line.middleware(config), (req, res) => {
 
 // event handler
 const handleEvent = (event) => {
+    if (event.type === 'postback' && event.postback.data) return client.replyMessage(event.replyToken, { type: 'text', text: event.postback.data });
+
     if (event.type !== 'message' || event.message.type !== 'text') return Promise.resolve(null);
 
     let message = undefined
@@ -197,9 +199,9 @@ const handleEvent = (event) => {
                             "uri": "line://app/1654446763-WNw4E4Mx"
                         },
                         {
-                            "type": "message",
+                            "type": "postback",
                             "label": "Universal Liff",
-                            "text": "https://liff.line.me/1654446763-WNw4E4Mx"
+                            "data": "https://liff.line.me/1654446763-WNw4E4Mx"
                         }
                     ],
                     "title": "Menu 1",
