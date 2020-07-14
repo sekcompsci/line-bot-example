@@ -199,7 +199,7 @@ const handleEvent = (event) => {
                         {
                             "type": "message",
                             "label": "Universal Liff",
-                            "uri": "https://liff.line.me/1654446763-WNw4E4Mx"
+                            "text": "https://liff.line.me/1654446763-WNw4E4Mx"
                         }
                     ],
                     "title": "Menu 1",
